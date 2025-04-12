@@ -305,13 +305,13 @@ function addColumnToBoard(columnName) {
     select.appendChild(newOption);
 }
 
-function saveColumnToLocalStorage(columnName) {
-    let columns = JSON.parse(localStorage.getItem("columns")) || [];
-    if (!columns.includes(columnName)) {
-        columns.push(columnName);
-        localStorage.setItem("columns", JSON.stringify(columns));
-    }
-}
+// function saveColumnToLocalStorage(columnName) {
+//     let columns = JSON.parse(localStorage.getItem("columns")) || [];
+//     if (!columns.includes(columnName)) {
+//         columns.push(columnName);
+//         localStorage.setItem("columns", JSON.stringify(columns));
+//     }
+// }
 
 // function loadColumnsFromLocalStorage() {
 //     let columns = JSON.parse(localStorage.getItem("columns")) || [];
