@@ -31,14 +31,7 @@ const editBoardNameInput = document.getElementById("editBoardName");
 
 let currentEditingColumn = null; // Tracks the column being edited
 let activeBoard = null; // Tracks the currently active board in the sidebar
-// لكل مهمة (taskElement) عند إنشائها:
-// taskElement.setAttribute('draggable', 'true');
-// taskElement.addEventListener('dragstart', handleDragStart);
-// taskElement.addEventListener('dragend', handleDragEnd);
 
-// // لكل حاوية مهام (tasks-container):
-// tasksContainer.addEventListener('dragover', handleDragOver);
-// tasksContainer.addEventListener('drop', handleDrop);
 
 /********************************************************** Sidebar & Layout Functions **********************************************************/
 function toggleSidebar() {
@@ -295,7 +288,7 @@ function addColumnToBoard(columnName) {
     const newColumnBtn = document.querySelector(".new-column");
     board.insertBefore(newColumn, newColumnBtn);
 
-    saveColumnToLocalStorage(columnName);
+    // saveColumnToLocalStorage(columnName);
 
     const select = document.getElementById("taskStatus");
     const newOption = document.createElement("option");
@@ -317,6 +310,7 @@ function addColumnToBoard(columnName) {
 //     let columns = JSON.parse(localStorage.getItem("columns")) || [];
 //     columns.forEach(addColumnToBoard);
 // }
+
 
 // document.addEventListener("DOMContentLoaded", loadColumnsFromLocalStorage);
 
@@ -405,6 +399,7 @@ function removeSelectOption(columnName) {
         }
     }
 }
+
 document.getElementById("closeEditColumnModal").addEventListener("click", () => {
     editColumnModal.style.display = "none";
 });
