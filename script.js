@@ -318,7 +318,7 @@ function saveColumnToLocalStorage(columnName) {
 //     columns.forEach(addColumnToBoard);
 // }
 
-document.addEventListener("DOMContentLoaded", loadColumnsFromLocalStorage);
+// document.addEventListener("DOMContentLoaded", loadColumnsFromLocalStorage);
 
 /********************************************************** Edit Column Modal Functions **********************************************************/
 
