@@ -313,10 +313,10 @@ function saveColumnToLocalStorage(columnName) {
     }
 }
 
-function loadColumnsFromLocalStorage() {
-    let columns = JSON.parse(localStorage.getItem("columns")) || [];
-    columns.forEach(addColumnToBoard);
-}
+// function loadColumnsFromLocalStorage() {
+//     let columns = JSON.parse(localStorage.getItem("columns")) || [];
+//     columns.forEach(addColumnToBoard);
+// }
 
 document.addEventListener("DOMContentLoaded", loadColumnsFromLocalStorage);
 
